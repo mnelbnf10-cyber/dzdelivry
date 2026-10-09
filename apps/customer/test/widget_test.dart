@@ -1,9 +1,11 @@
+
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dzdelivery_customer/main.dart';
+import 'package:customer/main.dart';
 
 void main() {
-  testWidgets('app shows its sign-in screen', (tester) async {
-    await tester.pumpWidget(const App());
+  testWidgets('DzDelivery customer app loads', (WidgetTester tester) async {
+    await tester.pumpWidget(const DzDeliveryApp());
+
     expect(find.text('DzDelivery'), findsWidgets);
   });
 }
